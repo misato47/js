@@ -4,7 +4,7 @@
   const title1 = document.getElementById('title1');
   title1.addEventListener('click',()=>{
     const i = document.getElementById('icon1');
-    if(isClick === false){
+    if(!isClick){
       i.className = 'fas fa-angle-up';
       const item1 = document.createElement('li');
       item1.textContent = "中身１";
@@ -26,8 +26,8 @@
       
     } else {
       i.className = 'fas fa-angle-down';
-      const Ul1 = document.getElementById('ul1');
-      while(Ul1.firstChild) Ul1.removeChild(Ul1.firstChild);
+      const ul1 = document.getElementById('ul1');
+      ul1.textContent = '';
     }
     isClick = !isClick;
   });
@@ -63,8 +63,8 @@
     }
     else {
       i.className = 'fas fa-angle-down';
-      const Ul2 = document.getElementById('ul2');
-      while(Ul2.firstChild) Ul2.removeChild(Ul2.firstChild);
+      const ul2 = document.getElementById('ul2');
+      ul2.textContent = '';
     }
     isClick = !isClick;
   });
