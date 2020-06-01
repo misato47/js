@@ -1,0 +1,19 @@
+main {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  width: 700px;
+  height:400px;
+}
+.title {
+  list-style: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.content {
+  border-bottom: 1px dotted #000;
+  list-style: none;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
